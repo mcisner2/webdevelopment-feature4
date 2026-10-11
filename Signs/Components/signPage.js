@@ -23,7 +23,7 @@ import {
   const [sortOrder, setSortOrder] = useState("ascending");
   const [showCaptions, setShowCaptions] = useState(true);
  
-  // Filter the signs array down to only the ones matching the typed earch text 
+  // Filter the signs array down to only the ones matching the typed each text 
   // This is case-insensitive, since .toLowerCase() is used
   const filteredSigns = signs.filter((sign) => {
     const letter = labelToLetter(sign.label);

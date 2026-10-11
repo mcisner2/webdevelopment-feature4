@@ -5,11 +5,15 @@ import {
   useState,
 } from "https://unpkg.com/htm/preact/standalone.module.js";
 
-// import signPage component and getData service file
-import { signPage } from "./Signs/Components/signPage.js";
-import { getData } from "./Signs/Services/getData.js";
+// initialize Parse first so the connection is configured
+// before any model runs a query
+import "./Shared/parseConfig.js";
 
-// data down flow with getData called and setSigns called
+// import signPage component and the Parse model for signs
+import { signPage } from "./Signs/Components/signPage.js";
+import { getAllSigns } from "./Signs/Models/signModel.js";
+
+// data down flow with getAllSigns called and setSigns called
 function App() {
   const [signs, setSigns] = useState([]);
 
@@ -20,7 +24,7 @@ function App() {
   // .catch is for if an error occurs; we need the user to see that message
   useEffect(() => {
     console.log("Images are rendering...");
-    getData().then((data) => {
+    getAllSigns().then((data) => {
       setSigns(data);
       setStatus("Success");
     })
