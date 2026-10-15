@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "type": "radio",
+      "question": "When did Notre Dame pilot its first ASL class?",
+      "options": [
+        { "value": "wrong1", "text": "2025" },
+        { "value": "correct", "text": "2026" },
+        { "value": "wrong2", "text": "2005" },
+        { "value": "wrong3", "text": "1995" }
+      ],
+      "correct_answer": "correct"
+    },
+    {
+        "id": 2,
+        "type": "radio",
+        "question": "When was the Americans with Disabilities Act (ADA) signed into law?",
+        "options": [
+          { "value": "correct", "text": "1990" },
+          { "value": "wrong1", "text": "1992" },
+          { "value": "wrong2", "text": "1985" },
+          { "value": "wrong3", "text": "1995" }
+        ],
+        "correct_answer": "correct"
+      },
+      {
+        "id": 3,
+        "type": "radio",
+        "question": "Which US President signed the ADA into law?",
+        "options": [
+          { "value": "correct", "text": "George H.W. Bush" },
+          { "value": "wrong1", "text": "George W. Bush" },
+          { "value": "wrong2", "text": "Ronald Reagan" },
+          { "value": "wrong3", "text": "Bill Clinton" }
+        ],
+        "correct_answer": "correct"
+      }
+  ]

@@ -6,7 +6,7 @@ import {
   
   // import two functions to convert letter to letter in ASCII and
   // convert rgba bytes into a pixelated image
-  import { labelToLetter } from "../Services/getData.js";
+  import { labelToLetter } from "../Services/getData.jsx";
   import { signImage } from "./signImage.js";
   
   // construct page here with title and signs

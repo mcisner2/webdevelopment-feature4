@@ -10,8 +10,8 @@ import {
 import "./Shared/parseConfig.js";
 
 // import signPage component and the Parse model for signs
-import { signPage } from "./Signs/Components/signPage.js";
-import { getAllSigns } from "./Signs/Models/signModel.js";
+import { signPage } from "../Signs/Components/signPage.js";
+import { getAllSigns } from "../Signs/Models/signModel.js";
 
 // data down flow with getAllSigns called and setSigns called
 function App() {
@@ -48,4 +48,4 @@ function App() {
 `;
 }
 
-render(html` <${App} /> `, document.getElementById("app"));
+export default App;

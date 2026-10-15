@@ -1,0 +1,79 @@
+[
+    {
+      "id": 1,
+      "year": 1755,
+      "title": "First Free School for the Deaf Opens in Paris",
+      "description": "Abbé Charles-Michel de l'Épée founded the first free school for deaf students in Paris, developing a system of methodical signs that would influence ASL.",
+      "category": "origins"
+    },
+    {
+      "id": 2,
+      "year": 1817,
+      "title": "American School for the Deaf Founded",
+      "description": "Thomas Hopkins Gallaudet and Laurent Clerc founded the American School for the Deaf in Hartford, Connecticut",
+      "category": "education"
+    },
+    {
+      "id": 3,
+      "year": 1857,
+      "title": "Columbia Institution Founded",
+      "description": "Amos Kendall and Edward Miner Gallaudet established the Columbia Institution for the Instruction of the Deaf and Dumb and the Blind (later renamed to Gallaudet University) in Washington, D.C.",
+      "category": "education"
+    },
+    {
+      "id": 4,
+      "year": 1864,
+      "title": "Gallaudet University Authorized to Grant Degrees",
+      "description": "President Abraham Lincoln signed a charter authorizing the Columbia Institution to grant college degrees, making it the first institution of higher education for deaf students in the world.",
+      "category": "legislation"
+    },
+    {
+      "id": 5,
+      "year": 1880,
+      "title": "The Milan Conference and the Rise of Oralism",
+      "description": "At the Second International Congress on Education of the Deaf in Milan, educators voted to ban sign language in deaf schools in favor of oral-only instruction. This decision set back deaf education and sign language use for nearly a century.",
+      "category": "education"
+    },
+    {
+      "id": 6,
+      "year": 1960,
+      "title": "ASL Recognized as a True Language",
+      "description": "Linguist William Stokoe published research demonstrating that American Sign Language has its own grammar and structure, distinct from English.",
+      "category": "linguistics"
+    },
+    {
+      "id": 7,
+      "year": 1965,
+      "title": "First ASL Dictionary Based on Linguistic Principles",
+      "description": "Stokoe, along with Dorothy Casterline and Carl Croneberg, published 'A Dictionary of American Sign Language on Linguistic Principles,' formally documenting ASL's structure and vocabulary.",
+      "category": "linguistics"
+    },
+    {
+      "id": 8,
+      "year": 1988,
+      "title": "Deaf President Now Movement",
+      "description": "Students at Gallaudet University protested the selection of a hearing president over qualified Deaf candidates. The week-long Deaf President Now movement succeeded, resulting in I. King Jordan becoming the university's first deaf president.",
+      "category": "activism"
+    },
+    {
+      "id": 9,
+      "year": 1990,
+      "title": "President George H.W. Bush Signs the Americans with Disabilities Act Into Law",
+      "description": "The ADA prohibited discrimination based on disability and required accommodations such as sign language interpreters in many public settings, marking a major legal milestone for the Deaf community.",
+      "category": "legislation"
+    },
+    {
+      "id": 10,
+      "year": 2000,
+      "title": "Growth of ASL in Higher Education",
+      "description": "American Sign Language became increasingly recognized as meeting foreign language requirements at colleges and universities across the U.S., reflecting growing academic and cultural acceptance of ASL as a full language.",
+      "category": "education"
+    },
+    {
+      "id": 11,
+      "year": 2026,
+      "title": "ASL at Notre Dame",
+      "description": "Notre Dame launches an ASL class, paving the way for ASL to be accepted as a foreign language",
+      "category": "education"
+    }
+  ]

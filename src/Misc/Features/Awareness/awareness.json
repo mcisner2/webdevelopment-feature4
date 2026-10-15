@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "title": "National Association of the Deaf (NAD)",
+      "description": "The NAD is the leading civil rights organization for deaf and hard of hearing people in the United States, advocating for equal access in education, employment, healthcare, and technology.",
+      "category": "organization",
+      "link": "https://www.nad.org"
+    },
+    {
+        "id": 2,
+        "title": "American Society for Deaf Children (ASDC)",
+        "description": "The ASDC is a family-led organization that supports parents and families of deaf and hard of hearing children, promoting ASL and bilingual (ASL/English) approaches so families can communicate fully with their deaf children.",
+        "category": "organization",
+        "link": "https://deafchildren.org"
+      }
+]
