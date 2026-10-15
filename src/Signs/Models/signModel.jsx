@@ -1,4 +1,4 @@
-import Parse from "../../Shared/parseConfig.js";
+import Parse from "parse";
 
 // Parse model for the "Sign" class
 const Sign = Parse.Object.extend("Sign");

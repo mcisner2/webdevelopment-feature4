@@ -1,13 +1,14 @@
-import {
-    html,
+import React, {
     useEffect,
     useState
-  } from "https://unpkg.com/htm/preact/standalone.module.js";
+  } from "react";
+  import htm from "htm";
+  const html = htm.bind(React.createElement);
   
   // import two functions to convert letter to letter in ASCII and
   // convert rgba bytes into a pixelated image
   import { labelToLetter } from "../Services/getData.jsx";
-  import { signImage } from "./signImage.js";
+  import { signImage } from "./signImage.jsx";
   
   // construct page here with title and signs
   export function signPage({ title, signs = [] }) {
@@ -48,7 +49,7 @@ import {
         <p>Note: ASL signs including motion are not included in this set</p>
         
           <form
-            style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 16px;"
+            style=${{"display": "flex", "flexWrap": "wrap", "gap": "12px", "alignItems": "center", "marginBottom": "16px"}}
             onSubmit=${(e) => e.preventDefault()}>
 
             <label>
@@ -56,7 +57,7 @@ import {
               <input
                 type="text"
                 placeholder="e.g. A"
-                maxlength="1"
+                maxLength="1"
                 value=${searchLetter}
                 onInput=${(e) => setSearchLetter(e.target.value)}
               />
@@ -83,7 +84,7 @@ import {
           </form>
 
 
-        <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+        <div style=${{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
           ${sortedSigns.map(
             (sign) =>
               html`<${signImage} key=${sign.label} pixels=${sign.pixels} letter=${labelToLetter(sign.label)} showCaption=${showCaptions} />`

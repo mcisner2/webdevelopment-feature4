@@ -6,11 +6,13 @@
 // how to use it to generate our ASL images
 // Link: https://developer.mozilla.org/en-US/docs/Web/API/ImageData/data
 
-import {
-   html,
-   useEffect,
-   useRef,
-} from "https://unpkg.com/htm/preact/standalone.module.js";
+import React, {
+    useEffect,
+    useRef,
+    useState
+} from "react";
+import htm from "htm";
+const html = htm.bind(React.createElement);
 
 // create function to take in pixles and letter label to 
 // generate a 28 pixel image
@@ -45,7 +47,7 @@ export function signImage({ pixels, letter, showCaption = true }) {
             height="28"
             role="img"
             aria-label=${`Hand sign for the letter ${letter}`}
-            style="width: 90px;">
+            style=${{ width: "90px" }}>
         </canvas>
         ${showCaption ? html`<figcaption>${letter}</figcaption>` : null}
     </figure>

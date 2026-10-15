@@ -17,7 +17,7 @@ export function Header({ title, signs = [] }) {
   return html`
     <header>
       <h1>${title}</h1>
-      <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+      <div style=${{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
         ${signs.map(
           (sign) =>
             html`<${signImage} key=${sign.label} pixels=${sign.pixels} letter=${labelToLetter(sign.label)} />`
