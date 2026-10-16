@@ -1,20 +1,14 @@
-// HistoryList.js
+// HistoryList.jsx
 // Parent component for the History feature.
 // Responsible for: fetching data via HistoryService, tracking
 // loading/error/data state, and rendering one HistoryEvent child
-// per item. Does NOT know how an individual event is displayed -
-// that's the child's job.
+// per item.
 
-import {
-  html,
-  useEffect,
-  useState,
-} from "https://unpkg.com/htm/preact/standalone.module.js";
+import { useEffect, useState } from "react";
+import { getHistoryData } from "../Services/HistoryService.jsx";
+import { HistoryEvent } from "./HistoryEvent.jsx";
 
-import { getHistoryData } from "../Services/HistoryService.js";
-import { historyEvent } from "./HistoryEvent.jsx";
-
-export function historyList() {
+export function HistoryList() {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -23,33 +17,23 @@ export function historyList() {
     // Runs once when the component mounts. Fetch the history data
     // and update state depending on the outcome.
     getHistoryData()
-      .then((data) => {
-        setEvents(data);
-        setLoading(false);
-      })
+      .then(setEvents)
       .catch(() => {
-        // Something went wrong (bad path, malformed JSON, etc.) -
-        // show an error state instead of leaving the user with a
-        // blank screen.
+        // bad path, malformed JSON, etc. - show an error instead of a blank screen
         setError("Unable to load ASL history right now. Please try again later.");
-        setLoading(false);
-      });
+      })
+      .finally(() => setLoading(false));
   }, []);
 
-  if (loading) {
-    return html`<p role="status">Loading history...</p>`;
-  }
+  if (loading) return <p role="status">Loading history...</p>;
+  if (error) return <p role="alert">{error}</p>;
 
-  if (error) {
-    return html`<p role="status">${error}</p>`;
-  }
-
-  return html`
+  return (
     <section>
       <h2>History of ASL</h2>
-      ${events.map(
-        (event) => html`<${historyEvent} key=${event.id} event=${event} />`
-      )}
+      {events.map((event) => (
+        <HistoryEvent key={event.id} event={event} />
+      ))}
     </section>
-  `;
+  );
 }
