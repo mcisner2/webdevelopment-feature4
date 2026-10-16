@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.4.0] - 2026-10-16
+## [0.2.0] - 2026-10-16
 ### Added
 - React Router with Signs and History routes
 - Parse models for Sign and User
